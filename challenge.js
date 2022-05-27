@@ -1,4 +1,4 @@
-module.exports = function sum(number, total = 0) {
+const sum = (number, total = 0) => {
   total += number;
   if(number <= 0) {
     return total;
@@ -8,3 +8,5 @@ module.exports = function sum(number, total = 0) {
 
 console.log(sum(4))
 console.log(sum(10))
+
+module.exports = sum
