@@ -1,5 +1,9 @@
 module.exports = function sum(number, total = 0) {
-  return 10;
+  total += number;
+  if(number <= 0) {
+    return total;
+  }
+  return sum(number - 1, total);
 }
 
 console.log(sum(4))
